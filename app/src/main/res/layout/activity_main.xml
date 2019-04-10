@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+    <com.smarteist.autoimageslider.SliderLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/image_slider"
+        android:layout_margin="@dimen/slider"
+       />
+
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="@dimen/slider"
+
+        android:background="@drawable/btn_shape"
+        android:paddingEnd="22dp"
+
+
+        android:text="@string/ac_main_news"
+        android:textAlignment="viewEnd"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_main_size"
+        app:rd_backgroundColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleColor="#aaaa"
+        app:rd_rippleType="wave"
+        />
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="@dimen/slider"
+
+        android:text="@string/ac_main_event"
+        android:textAlignment="viewEnd"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_main_size"
+        android:paddingEnd="22dp"
+
+
+        android:background="@drawable/btn_shape"
+        app:rd_backgroundColor="#ffffff"
+        app:rd_enable="true"
+        app:rd_rippleColor="#aaaa"
+        app:rd_rippleType="wave"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        >
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider"
+
+            android:text="@string/ac_main_map"
+            android:textAlignment="viewEnd"
+
+            android:background="@drawable/btn_shape"
+            app:rd_backgroundColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleColor="#aaaa"
+            app:rd_rippleType="wave"
+
+            android:layout_weight="3"
+            />
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider"
+
+            android:text="@string/ac_main_bus"
+            android:textAlignment="viewEnd"
+
+            android:background="@drawable/btn_shape"
+            app:rd_backgroundColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleColor="#aaaa"
+            app:rd_rippleType="wave"
+
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        >
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider"
+
+            android:text="@string/ac_main_guide"
+            android:textAlignment="viewEnd"
+
+            android:background="@drawable/btn_shape"
+            app:rd_backgroundColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleColor="#aaaa"
+            app:rd_rippleType="wave"
+
+            android:layout_weight="3"
+            />
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider"
+
+            android:text="@string/ac_main_tick"
+            android:textAlignment="viewEnd"
+
+            android:background="@drawable/btn_shape"
+            app:rd_backgroundColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleColor="#aaaa"
+            app:rd_rippleType="wave"
+
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        >
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider"
+
+            android:text="@string/ac_main_payment"
+            android:textAlignment="viewEnd"
+
+            android:background="@drawable/btn_shape"
+            app:rd_backgroundColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleColor="#aaaa"
+            app:rd_rippleType="wave"
+
+            android:layout_weight="3"
+            />
+        <com.rey.material.widget.Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider"
+
+            android:text="@string/ac_main_about_us"
+            android:textAlignment="viewEnd"
+
+            android:background="@drawable/btn_shape"
+            app:rd_backgroundColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleColor="#aaaa"
+            app:rd_rippleType="wave"
+
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
