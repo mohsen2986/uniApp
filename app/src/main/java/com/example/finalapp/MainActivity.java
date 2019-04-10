@@ -16,6 +16,14 @@ import com.smarteist.autoimageslider.SliderView;
 
 public class MainActivity extends AppCompatActivity {
     private SliderLayout sliderLayout;
+    private Button btn_news;
+    private Button btn_events;
+    private Button btn_map;
+    private Button btn_bus;
+    private Button btn_about_us;
+    private Button btn_tick;
+    private Button btn_guide;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void initialize()
+
     {
         sliderLayout=findViewById(R.id.image_slider);
+        btn_news=findViewById(R.id.btn_news);
+        btn_events=findViewById(R.id.btn_events);
+        btn_bus=findViewById(R.id.btn_bus);
+        btn_about_us=findViewById(R.id.btn_about_us);
+        btn_guide=findViewById(R.id.btn_guide);
+        btn_map=findViewById(R.id.btn_map);
+        btn_tick=findViewById(R.id.btn_tick);
     }
     private void slider()
     {
@@ -71,11 +87,11 @@ public class MainActivity extends AppCompatActivity {
     }
     private void Ui()
     {
-        Drawable drawable = getResources().getDrawable(R.drawable.newspaper);
+/*        Drawable drawable = getResources().getDrawable(R.drawable.newspaper);
         drawable.setBounds(0, 0, (int)(drawable.getIntrinsicWidth()*.70),
                 (int)(drawable.getIntrinsicHeight()*0.70));
         ScaleDrawable sd = new ScaleDrawable(drawable, 0, 100, 100);
         Button btn = findViewById(R.id.btn_news);
-        btn.setCompoundDrawables(sd.getDrawable(), null, null, null); //set drawableLeft for example
+        btn.setCompoundDrawables(sd.getDrawable(), null, null, null); //set drawableLeft for example*/
     }
 }
