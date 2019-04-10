@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_about_us;
     private Button btn_tick;
     private Button btn_guide;
+    private Button btn_help;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btn_guide=findViewById(R.id.btn_guide);
         btn_map=findViewById(R.id.btn_map);
         btn_tick=findViewById(R.id.btn_tick);
+        btn_help=findViewById(R.id.btn_help);
     }
     private void slider()
     {
@@ -87,11 +89,55 @@ public class MainActivity extends AppCompatActivity {
     }
     private void Ui()
     {
-/*        Drawable drawable = getResources().getDrawable(R.drawable.newspaper);
+        Drawable drawable;
+        ScaleDrawable scaleDrawable;
+        // set the news button
+        drawable=getResources().getDrawable(R.drawable.news);
         drawable.setBounds(0, 0, (int)(drawable.getIntrinsicWidth()*.70),
                 (int)(drawable.getIntrinsicHeight()*0.70));
-        ScaleDrawable sd = new ScaleDrawable(drawable, 0, 100, 100);
-        Button btn = findViewById(R.id.btn_news);
-        btn.setCompoundDrawables(sd.getDrawable(), null, null, null); //set drawableLeft for example*/
+        scaleDrawable = new ScaleDrawable(drawable, 0, 100, 100);
+        btn_news.setCompoundDrawables(scaleDrawable.getDrawable(), null, null, null); //set drawableLeft for example*/
+        // set the events button
+        drawable=getResources().getDrawable(R.drawable.calendar);
+        drawable.setBounds(0, 0, (int)(drawable.getIntrinsicWidth()*.70),
+                (int)(drawable.getIntrinsicHeight()*0.70));
+        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
+        btn_events.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
+        // set thr map button
+        drawable =getResources().getDrawable(R.drawable.college);
+        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
+                ,(int)(drawable.getIntrinsicHeight()*0.60));
+        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
+        btn_map.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
+        // set the bus services button
+        drawable=getResources().getDrawable(R.drawable.bus);
+        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
+                ,(int)(drawable.getIntrinsicHeight()*0.60));
+        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
+        btn_bus.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
+        // set the tick button
+        drawable=getResources().getDrawable(R.drawable.tick);
+        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
+                ,(int)(drawable.getIntrinsicHeight()*0.60));
+        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
+        btn_tick.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
+        // set the guide button
+        drawable=getResources().getDrawable(R.drawable.support);
+        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
+                ,(int)(drawable.getIntrinsicHeight()*0.60));
+        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
+        btn_guide.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
+        // set the about us button
+        drawable=getResources().getDrawable(R.drawable.technology);
+        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
+                ,(int)(drawable.getIntrinsicHeight()*0.60));
+        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
+        btn_about_us.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
+        // set the help button
+        drawable=getResources().getDrawable(R.drawable.give);
+        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
+                ,(int)(drawable.getIntrinsicHeight()*0.60));
+        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
+        btn_help.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
     }
 }

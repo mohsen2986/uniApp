@@ -4,8 +4,8 @@
     <string name="ac_main_event">رویداد ها</string>
     <string name="ac_main_about_us">درباره ما</string>
     <string name="ac_main_map">نقشه</string>
-    <string name="ac_main_bus">سرویس دانشکاهی</string>
+    <string name="ac_main_bus">   سرویس دانشکاهی</string>
     <string name="ac_main_payment">کمک</string>
     <string name="ac_main_tick">سامانه تیک</string>
-    <string name="ac_main_guide">راهنمای ثبت نام</string>
+    <string name="ac_main_guide">راهنما</string>
 </resources>

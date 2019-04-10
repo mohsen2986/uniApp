@@ -33,13 +33,13 @@
 
         android:text="@string/ac_main_news"
         android:textAlignment="viewEnd"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textSize="@dimen/text_main_size"
         app:rd_backgroundColor="#ffffff"
         app:rd_enable="true"
         app:rd_rippleColor="#aaaa"
         app:rd_rippleType="wave"
-        />
+        tools:ignore="RtlSymmetry" />
     <com.rey.material.widget.Button
         android:id="@+id/btn_events"
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
 
         android:text="@string/ac_main_event"
         android:textAlignment="viewEnd"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textSize="@dimen/text_main_size"
         android:paddingEnd="22dp"
 
@@ -59,62 +59,53 @@
         app:rd_rippleColor="#aaaa"
         app:rd_rippleType="wave"
 
-        />
+        tools:ignore="RtlSymmetry" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/card_size"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
         >
+
         <com.rey.material.widget.Button
             android:id="@+id/btn_map"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/slider"
+
+            android:layout_marginEnd="@dimen/card_div_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+
+            android:layout_weight="2"
+            android:background="@drawable/btn_shape"
 
             android:text="@string/ac_main_map"
             android:textAlignment="viewEnd"
-
-            android:background="@drawable/btn_shape"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text"
+            android:paddingEnd="6dp"
             app:rd_backgroundColor="#ffffff"
             app:rd_enable="true"
+
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
-
-            android:layout_weight="3"
-            />
+            tools:ignore="RtlSymmetry" />
         <com.rey.material.widget.Button
             android:id="@+id/btn_bus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/slider"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_div_margin"
+
 
             android:text="@string/ac_main_bus"
             android:textAlignment="viewEnd"
-
-            android:background="@drawable/btn_shape"
-            app:rd_backgroundColor="#ffffff"
-            app:rd_enable="true"
-            app:rd_rippleColor="#aaaa"
-            app:rd_rippleType="wave"
-
-            android:layout_weight="1"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal"
-        >
-        <com.rey.material.widget.Button
-            android:id="@+id/btn_guide"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/slider"
-
-            android:text="@string/ac_main_guide"
-            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text"
+            android:paddingEnd="6dp"
 
             android:background="@drawable/btn_shape"
             app:rd_backgroundColor="#ffffff"
@@ -124,14 +115,27 @@
 
             android:layout_weight="3"
             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_size"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        >
         <com.rey.material.widget.Button
             android:id="@+id/btn_tick"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/slider"
+            android:layout_marginEnd="@dimen/card_div_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
 
             android:text="@string/ac_main_tick"
             android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text"
+            android:paddingEnd="6dp"
 
             android:background="@drawable/btn_shape"
             app:rd_backgroundColor="#ffffff"
@@ -139,12 +143,37 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="1"
+            android:layout_weight="4"
+            />
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_guide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_div_margin"
+
+
+            android:text="@string/ac_main_guide"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text"
+            android:paddingEnd="6dp"
+
+            android:background="@drawable/btn_shape"
+            app:rd_backgroundColor="#ffffff"
+            app:rd_enable="true"
+            app:rd_rippleColor="#aaaa"
+            app:rd_rippleType="wave"
+
+            android:layout_weight="3"
+            tools:ignore="RtlSymmetry"
             />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/card_size"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
         >
@@ -152,10 +181,16 @@
             android:id="@+id/btn_help"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/slider"
+            android:layout_marginEnd="@dimen/card_div_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
 
             android:text="@string/ac_main_payment"
             android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text"
+            android:paddingEnd="6dp"
 
             android:background="@drawable/btn_shape"
             app:rd_backgroundColor="#ffffff"
@@ -163,16 +198,22 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="3"
+            android:layout_weight="4"
             />
         <com.rey.material.widget.Button
             android:id="@+id/btn_about_us"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/slider"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_div_margin"
 
             android:text="@string/ac_main_about_us"
             android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text"
+            android:paddingEnd="6dp"
 
             android:background="@drawable/btn_shape"
             app:rd_backgroundColor="#ffffff"
@@ -180,7 +221,7 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="1"
+            android:layout_weight="5"
             />
     </LinearLayout>
 </LinearLayout>

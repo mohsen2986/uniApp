@@ -2,4 +2,8 @@
 <resources>
     <dimen name="slider">10dp</dimen>
     <dimen name="text_main_size">27sp</dimen>
+    <dimen name="card_size">124dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="card_div_margin">4dp</dimen>
+    <dimen name="card_text">20sp</dimen>
 </resources>
