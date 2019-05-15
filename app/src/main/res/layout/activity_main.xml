@@ -32,6 +32,7 @@
 
 
         android:text="@string/ac_main_news"
+        android:fontFamily="@font/font_one"
         android:textAlignment="viewEnd"
         android:textColor="@color/white"
         android:textSize="@dimen/text_main_size"
@@ -39,7 +40,8 @@
         app:rd_enable="true"
         app:rd_rippleColor="#aaaa"
         app:rd_rippleType="wave"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        />
     <com.rey.material.widget.Button
         android:id="@+id/btn_events"
         android:layout_width="match_parent"
@@ -47,6 +49,7 @@
         android:layout_margin="@dimen/slider"
 
         android:text="@string/ac_main_event"
+        android:fontFamily="@font/font_one"
         android:textAlignment="viewEnd"
         android:textColor="@color/white"
         android:textSize="@dimen/text_main_size"
@@ -81,6 +84,7 @@
             android:background="@drawable/btn_shape"
 
             android:text="@string/ac_main_map"
+            android:fontFamily="@font/font_one"
             android:textAlignment="viewEnd"
             android:textColor="@color/white"
             android:textSize="@dimen/card_text"
@@ -102,6 +106,7 @@
 
 
             android:text="@string/ac_main_bus"
+            android:fontFamily="@font/font_one"
             android:textAlignment="viewEnd"
             android:textColor="@color/white"
             android:textSize="@dimen/card_text"
@@ -132,6 +137,7 @@
             android:layout_marginStart="@dimen/card_margin"
 
             android:text="@string/ac_main_tick"
+            android:fontFamily="@font/font_one"
             android:textAlignment="viewEnd"
             android:textColor="@color/white"
             android:textSize="@dimen/card_text"
@@ -156,6 +162,7 @@
 
 
             android:text="@string/ac_main_guide"
+            android:fontFamily="@font/font_one"
             android:textAlignment="viewEnd"
             android:textColor="@color/white"
             android:textSize="@dimen/card_text"
@@ -187,6 +194,7 @@
             android:layout_marginStart="@dimen/card_margin"
 
             android:text="@string/ac_main_payment"
+            android:fontFamily="@font/font_one"
             android:textAlignment="viewEnd"
             android:textColor="@color/white"
             android:textSize="@dimen/card_text"
@@ -210,6 +218,7 @@
             android:layout_marginStart="@dimen/card_div_margin"
 
             android:text="@string/ac_main_about_us"
+            android:fontFamily="@font/font_one"
             android:textAlignment="viewEnd"
             android:textColor="@color/white"
             android:textSize="@dimen/card_text"

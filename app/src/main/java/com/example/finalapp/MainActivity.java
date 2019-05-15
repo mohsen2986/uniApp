@@ -105,8 +105,8 @@ public class MainActivity extends AppCompatActivity {
         btn_events.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
         // set thr map button
         drawable =getResources().getDrawable(R.drawable.college);
-        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
-                ,(int)(drawable.getIntrinsicHeight()*0.60));
+        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.53)
+                ,(int)(drawable.getIntrinsicHeight()*0.53));
         scaleDrawable=new ScaleDrawable(drawable,0,100,100);
         btn_map.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
         // set the bus services button
