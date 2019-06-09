@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
     >
 <LinearLayout
     android:layout_width="match_parent"
@@ -20,7 +21,10 @@
         android:id="@+id/image_slider"
         android:layout_margin="@dimen/slider"
        />
-
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
     <com.rey.material.widget.Button
         android:id="@+id/btn_news"
         android:layout_width="match_parent"
@@ -42,6 +46,20 @@
         app:rd_rippleType="wave"
         tools:ignore="RtlSymmetry"
         />
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_news"
+            android:layout_alignBottom="@+id/btn_news"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/news"
+            android:elevation="200dp" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <com.rey.material.widget.Button
         android:id="@+id/btn_events"
         android:layout_width="match_parent"
@@ -62,17 +80,35 @@
         app:rd_rippleColor="#aaaa"
         app:rd_rippleType="wave"
 
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        />
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_events"
+        android:layout_alignBottom="@+id/btn_events"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/calendar"
+        android:elevation="200dp"
+        />
+</RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/card_size"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
         >
-
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    >
         <com.rey.material.widget.Button
             android:id="@+id/btn_map"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
 
             android:layout_marginEnd="@dimen/card_div_margin"
@@ -80,7 +116,6 @@
             android:layout_marginBottom="@dimen/card_margin"
             android:layout_marginStart="@dimen/card_margin"
 
-            android:layout_weight="2"
             android:background="@drawable/btn_shape"
 
             android:text="@string/ac_main_map"
@@ -94,10 +129,28 @@
 
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
-            tools:ignore="RtlSymmetry" />
+            tools:ignore="RtlSymmetry"
+            />
+    <ImageView
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_map"
+        android:layout_alignBottom="@+id/btn_map"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/college"
+        android:elevation="200dp"
+        />
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            >
         <com.rey.material.widget.Button
             android:id="@+id/btn_bus"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/card_margin"
             android:layout_marginTop="@dimen/card_margin"
@@ -118,18 +171,35 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="3"
             />
+            <ImageView
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btn_bus"
+                android:layout_alignBottom="@+id/btn_bus"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/bus"
+                android:elevation="200dp"
+                />
+        </RelativeLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/card_size"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
         >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            >
         <com.rey.material.widget.Button
             android:id="@+id/btn_tick"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/card_div_margin"
             android:layout_marginTop="@dimen/card_margin"
@@ -149,11 +219,27 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="4"
             />
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btn_tick"
+                android:layout_alignBottom="@+id/btn_tick"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/tick"
+                android:elevation="200dp"
+                />
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    >
         <com.rey.material.widget.Button
             android:id="@+id/btn_guide"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/card_margin"
             android:layout_marginTop="@dimen/card_margin"
@@ -174,19 +260,35 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="3"
             tools:ignore="RtlSymmetry"
             />
-    </LinearLayout>
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_guide"
+        android:layout_alignBottom="@+id/btn_guide"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/support"
+        android:elevation="200dp"
+        />
+</RelativeLayout>
+</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/card_size"
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
         >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            >
         <com.rey.material.widget.Button
             android:id="@+id/btn_help"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/card_div_margin"
             android:layout_marginTop="@dimen/card_margin"
@@ -206,11 +308,27 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="4"
             />
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btn_help"
+                android:layout_alignBottom="@+id/btn_help"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/give"
+                android:elevation="200dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            >
         <com.rey.material.widget.Button
             android:id="@+id/btn_about_us"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/card_margin"
             android:layout_marginTop="@dimen/card_margin"
@@ -230,8 +348,19 @@
             app:rd_rippleColor="#aaaa"
             app:rd_rippleType="wave"
 
-            android:layout_weight="5"
             />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btn_about_us"
+                android:layout_alignBottom="@+id/btn_about_us"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/technology"
+                android:elevation="200dp"
+                />
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
 </ScrollView>

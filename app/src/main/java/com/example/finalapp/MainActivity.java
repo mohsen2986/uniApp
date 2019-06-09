@@ -1,5 +1,7 @@
 package com.example.finalapp;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ScaleDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -32,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         initialize();
         slider();
         hideSystemUi();
-        Ui();
 
     }
     private void initialize()
@@ -86,58 +87,5 @@ public class MainActivity extends AppCompatActivity {
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN|
                 View.SYSTEM_UI_FLAG_FULLSCREEN
         );
-    }
-    private void Ui()
-    {
-        Drawable drawable;
-        ScaleDrawable scaleDrawable;
-        // set the news button
-        drawable=getResources().getDrawable(R.drawable.news);
-        drawable.setBounds(0, 0, (int)(drawable.getIntrinsicWidth()*.70),
-                (int)(drawable.getIntrinsicHeight()*0.70));
-        scaleDrawable = new ScaleDrawable(drawable, 0, 100, 100);
-        btn_news.setCompoundDrawables(scaleDrawable.getDrawable(), null, null, null); //set drawableLeft for example*/
-        // set the events button
-        drawable=getResources().getDrawable(R.drawable.calendar);
-        drawable.setBounds(0, 0, (int)(drawable.getIntrinsicWidth()*.70),
-                (int)(drawable.getIntrinsicHeight()*0.70));
-        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
-        btn_events.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
-        // set thr map button
-        drawable =getResources().getDrawable(R.drawable.college);
-        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.53)
-                ,(int)(drawable.getIntrinsicHeight()*0.53));
-        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
-        btn_map.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
-        // set the bus services button
-        drawable=getResources().getDrawable(R.drawable.bus);
-        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
-                ,(int)(drawable.getIntrinsicHeight()*0.60));
-        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
-        btn_bus.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
-        // set the tick button
-        drawable=getResources().getDrawable(R.drawable.tick);
-        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
-                ,(int)(drawable.getIntrinsicHeight()*0.60));
-        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
-        btn_tick.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
-        // set the guide button
-        drawable=getResources().getDrawable(R.drawable.support);
-        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
-                ,(int)(drawable.getIntrinsicHeight()*0.60));
-        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
-        btn_guide.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
-        // set the about us button
-        drawable=getResources().getDrawable(R.drawable.technology);
-        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
-                ,(int)(drawable.getIntrinsicHeight()*0.60));
-        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
-        btn_about_us.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
-        // set the help button
-        drawable=getResources().getDrawable(R.drawable.give);
-        drawable.setBounds(0,0,(int) (drawable.getIntrinsicWidth()*.60)
-                ,(int)(drawable.getIntrinsicHeight()*0.60));
-        scaleDrawable=new ScaleDrawable(drawable,0,100,100);
-        btn_help.setCompoundDrawables(scaleDrawable.getDrawable(),null,null,null);
     }
 }
